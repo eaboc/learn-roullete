@@ -1,0 +1,20 @@
+:root {
+  /* FONT-SIZES */
+  --fm-small: 13px;
+  --fm-regular: 19px;
+  --fm-large: 24px;
+  --fm-xlarge: 36px;
+
+  /* COLORS */
+  --black: #111;
+  --xdark-gray: #222;
+  --dark-gray: #333;
+  --gray: #888;
+  --light-gray: #aaa;
+  --xlight-gray: #ccc;
+  --white: #eee;
+
+  /* MOBILE BUTTONS */
+  --mbtn-mwidth: 70vw;
+  --mbtn-mheight: 6vh;
+}

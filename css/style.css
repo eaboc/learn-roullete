@@ -1,0 +1,170 @@
+@import "./variables.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+html,
+body,
+.container {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* DESKTOP */
+@media (min-width: 1200px) {
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 499px) {
+  .mobile {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  p {
+    font-size: var(--fm-regular);
+    margin: 1vh 1vw;
+  }
+
+  strong {
+    font-weight: 900;
+  }
+
+  h1 {
+    font-size: var(--fm-xlarge);
+    font-weight: 700;
+    margin: 1vh 0;
+  }
+
+  h2 {
+    font-size: var(--fm-large);
+  }
+
+  h3 {
+    font-size: var(--fm-regular);
+    color: var(--gray);
+  }
+
+  .main-art {
+    width: 80vw;
+    height: auto;
+  }
+}
+
+/* COLOR THEMES */
+
+@media (prefers-color-scheme: dark) {
+  .mobile {
+    background-image: linear-gradient(
+      to bottom right,
+      var(--xlight-gray),
+      var(--white),
+      var(--xlight-gray),
+      var(--white)
+    );
+
+    color: var(--black);
+  }
+
+  strong {
+    color: black;
+  }
+
+  button {
+    background-color: var(--white);
+    color: var(--black);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .mobile {
+    background-image: linear-gradient(
+      to bottom right,
+      var(--black),
+      var(--xdark-gray)
+    );
+    color: var(--white);
+  }
+
+  strong {
+    color: white;
+  }
+
+  button {
+    background-color: var(--dark-gray);
+    color: var(--white);
+  }
+}
+
+/* SECTIONS */
+div.bar {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.target {
+  /* opacity: 0; */
+  width: 90%;
+  height: 1vh;
+  background-color: var(--gray);
+  border-radius: 0.5vh;
+}
+
+div.progress {
+  background-color: var(--white);
+  width: 2vh;
+  height: 1vh;
+  border-radius: 0.5vh;
+}
+
+section {
+  width: 100vw;
+  height: 90vh;
+  margin: 0;
+  padding: 5vh 7vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section.welcome {
+  display: none;
+}
+
+button {
+  outline: none;
+  border: none;
+  font-size: var(--fm-large);
+}
+
+button.submit {
+  width: var(--mbtn-mwidth);
+  height: var(--mbtn-mheight);
+  border-radius: calc(0.5 * var(--mbtn-mheight));
+  font-weight: 700;
+}
+
+div.title {
+  width: 90%;
+}
